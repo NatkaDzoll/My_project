@@ -1,0 +1,278 @@
+h2, #user {
+	text-align:left;
+	font-weight:normal;
+	color:white;
+	padding:0;
+	margin: 0;
+	font-style:normal
+}
+table {
+	margin:0 auto;
+	width:100%;
+}
+ul, ol{
+	width: auto;
+	margin: 0 2px 0 2px;
+	padding: 0;
+}
+
+.show{
+
+	position: relative;
+	margin: 2px;
+	min-width: 15px;
+	width: 97%;
+	height: 20px;
+	text-align:  center;
+	font-weight: bold;
+	color: grey
+}
+#eventListBack{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 100vh;
+	background: rgba( 255, 255, 255, 0.7);
+	opacity: 50%;
+	z-index: 1;
+}
+#eventList{
+	padding: 2px;
+	position: absolute;
+	min-height: 78px;
+	text-align: center;
+	z-index: 2;
+	background-color: rgb( 200, 200, 200)
+}
+#eventList ol{
+	width: auto;
+	height: auto;
+	vertical-align: top;
+	display: inline;
+	margin: 2px;
+}
+
+#dataTittle{
+	margin: 2px;
+	background-color: rgb( 100, 100, 100);
+}
+.dayName {
+	background-color: gray;
+	height: 20px;
+	text-align: center;
+	font-weight: bold;
+}
+.day {
+	margin: -1px;
+	width: 100%;
+	position: absolute;
+	border-bottom: 1px dotted  white;
+}
+.now-date{
+	background-color:  rgb( 200, 180, 180);
+}
+tr {
+	background-color: #1122;
+	height: 80px;
+	text-align: right;
+
+}
+td, #eventList {
+
+	vertical-align: top;
+	position: relative;
+	width: 14%
+}
+
+.event{
+	height: 18px;
+	background-color: rgb( 230, 230, 230 );
+	margin: 1px 0 1px 0;
+	color: rgb(50, 50, 50);
+	font-family: arial, serif;;
+	font-size: 13px;
+}
+
+.menu, #view-container, #aut-header, #form-box {
+	margin: auto;
+	padding:  5px;
+	text-align:center;
+	margin-bottom: 1px;
+	width:80%;
+}
+ #aut-header {
+ 	font: normal normal bold 1.4em sans-serif;
+ 	font-family: arial;
+ 	color: white;
+ }
+ #aut-header-text{
+ 	border: solid 3px;
+ 	width: 150px;
+ 	padding: 4px;
+ }
+#view-container, #form-box {
+	background-color: #1111;
+	height: 550px;
+}
+.week, .numb-day {
+	height: 406px;
+}
+.menu, #aut-header {
+	background-color: #333;
+	height: 40px;
+}
+
+.menu button {
+	float: left;
+    height: 30px;
+	font-size: 1em;
+	font-weight: bold;
+	text-align: center;
+}
+
+/* ----------------------- КНОПКИ СЛЕВА --- */
+.left-buttons {
+	float: left;
+	left: 5px;
+	position: relative;
+		margin: 5px 0 5px -1px;
+
+}
+.left-buttons button{
+	overflow: hidden;
+    
+    background-repeat: no-repeat;
+    background-position: center center;
+
+	}
+/* ---------------------стрелка назад (месяц)*/
+.icon-before:after{
+	content: "\25c0";
+}
+/* ---------------------стрелка вперед (месяц)*/
+.icon-after:after{ 
+	content: "\25b6";
+}
+
+/* --------------------------- ДАТА ------- */
+.center-date, #user {
+	margin: 0 10px 0 10px;
+	display: inline-block;
+	line-height: 35px;
+}
+#user {
+	float: right;
+	background-color: gray;
+	min-width: 100px;
+	height: 30px;
+	padding: 5px;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	font-family: arial;
+	font-weight: bold;
+	font-size: 18px;
+	font-style: italic;
+
+}
+/* ---------------------- КНОПКИ СПРАВА --- */
+.right-buttons {
+	float: right;
+	right: 5px;
+	position: relative;
+	margin: 5px 0 5px -1px;
+}
+.right-buttons button {
+    color: transparent;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+}	
+
+#month-button {
+	background-image: url(../icons/calendar-t31.png);
+}
+#week-button {
+	background-image: url(../icons/calendar-t7.png);
+}
+#day-button {
+	background-image: url(../icons/calendar-t1.png);
+}
+
+#form-body {
+	width: 70%;
+	font-family: arial;
+	font: normal normal normal 14px sans-serif;
+    margin: 0 auto ;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: left
+}
+
+/* .autorize-button{
+	display: inline-block;
+	vertical-align: top;
+	overflow: hidden;
+    margin: 5px 10px ;
+    padding: 3px;
+    text-align: left;
+    background-color: grey;
+} */
+#form-title{
+	padding: 15px 0;
+	font: normal normal bold 1.4em sans-serif;
+ 	font-family: arial;
+ 	color: #555;
+
+}
+.autorize label {
+    width: 40%;
+    float: left;
+    text-align: right;
+    padding: 0 10px;
+ }
+
+#aut-form {
+	height: 150px;
+	padding: 70px 0 0 0 ;
+	background-color: #3333;
+}
+.error{
+	font-size: 12px;
+	color: red;
+	display: inline-block;
+
+}
+.autorize-row{
+	height: 40px;
+    padding-top: 5px;
+}
+
+.submit-box {
+	text-align: center;
+	width: 250px;
+	margin: 10px auto;
+}
+#submit-button{
+	text-align: right;
+}
+label .error{
+	float: right;
+}
+.error-message {
+	display: inline-block;
+	vertical-align: right;
+	zoom: 1; /* Fix for IE7 */
+	*display: inline; /* Fix for IE7 */
+	text-align: left;
+	color: red;
+	}
+
+input {
+	width: 150px;
+    text-align: right;
+    padding: 3px auto;
+}
